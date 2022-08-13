@@ -1,0 +1,241 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header {
+    background-color: rgba(243, 198, 189, 1);
+    padding: 57px 0 58px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 15px;
+}
+
+.logo_title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #2B292D;
+}
+
+.logo_text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.header_ul{
+    margin-right: 75px;
+}
+
+.header_li:not(last-of-type){
+    margin-right: 30px;
+}
+
+.header_link{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px; 
+    text-align: right;
+    color: #2B292D;
+    text-decoration: none;
+    position: relative;
+}
+
+.header_link:hover::before{
+    transition: 200ms;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #ffae9d;
+    bottom: 0;
+}
+
+.header_button{
+    width: 160px;
+    height: 48px;
+    border: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.header_button:hover{
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #4c59c5;
+    transition: 220ms;
+}
+
+.questions{
+    background-color: rgba(244, 245, 247, 1);
+    padding: 77px 0 76px;
+}
+
+.question{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #2B292D;
+}
+
+.answer{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #2B292D;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 0 150px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.engagement{
+    background-color: rgba(0, 161, 198, 0.07);
+    padding: 108px 0 110px;
+    text-align: center;
+    mix-blend-mode: normal;
+}
+
+.engagement_div{
+    max-width: 555px;
+}
+
+.engagement_h5{
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    color: #2B292D;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.engagement_title{
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #2B292D;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.engagement_text{
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #2B292D;
+    margin-bottom: 34px;
+}
+
+.engagement_button{
+    max-width: 328px;
+    margin: 0 auto;
+    margin-bottom: 111px;
+}
+
+.section_button{
+    width: 158px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 13px;
+    font-weight: bold;
+    color: #000000;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    border: none;
+}
+
+.grid_button{
+    width: 262px;
+    height: 300px;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #2B292D;
+    border: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-weight: bold;
+    padding-bottom: 33px;
+}
+
+.grid_span{
+    margin-bottom: 33px;
+}
+
+.grid_img{
+    padding: 22px 51px 22px; /*без бокового падінгу текст під кнопкою з'їхав*/
+}
+
+.section_button:hover, .grid_button:hover{
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    transition: 220ms;
+    color: #FFFFFF;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.item:nth-child(3), .item:nth-child(4){
+    grid-row: span 2;
+}
+
+.grid2_div {
+    margin-bottom: 97px;
+    text-align: center;
+}
+
+.grid2_title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+.grid2_text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #172342;
+}
